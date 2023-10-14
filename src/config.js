@@ -7,7 +7,7 @@ const config = {
     botName: "BS FTC",
     initialMessages: [
         createChatBotMessage("I am Better Sentience FTC, also known as BS FTC, the #1 FTC chatbot. It\'s true, check this very objective ranking:"),
-        createChatBotMessage("1. BS FTC\n2. BS FTC\n3. BS FTC\n...\ninfinity. everyone else\nSource: BS FTC",
+        createChatBotMessage("1. BS FTC\n2. BS FTC\n3. BS FTC\n 4. FOSTER (just kidding, it's BS FTC)\nSource: BS FTC",
             {
                 withAvatar: true,
                 delay: 500,
