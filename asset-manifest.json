@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bs-ftc/static/css/main.7349e5e3.css",
-    "main.js": "/bs-ftc/static/js/main.fcdfc282.js",
-    "static/js/787.242c6af9.chunk.js": "/bs-ftc/static/js/787.242c6af9.chunk.js",
-    "index.html": "/bs-ftc/index.html",
-    "main.7349e5e3.css.map": "/bs-ftc/static/css/main.7349e5e3.css.map",
-    "main.fcdfc282.js.map": "/bs-ftc/static/js/main.fcdfc282.js.map",
-    "787.242c6af9.chunk.js.map": "/bs-ftc/static/js/787.242c6af9.chunk.js.map"
+    "main.css": "/BS-FTC/static/css/main.7349e5e3.css",
+    "main.js": "/BS-FTC/static/js/main.d075182a.js",
+    "static/js/787.242c6af9.chunk.js": "/BS-FTC/static/js/787.242c6af9.chunk.js",
+    "index.html": "/BS-FTC/index.html",
+    "main.7349e5e3.css.map": "/BS-FTC/static/css/main.7349e5e3.css.map",
+    "main.d075182a.js.map": "/BS-FTC/static/js/main.d075182a.js.map",
+    "787.242c6af9.chunk.js.map": "/BS-FTC/static/js/787.242c6af9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7349e5e3.css",
-    "static/js/main.fcdfc282.js"
+    "static/js/main.d075182a.js"
   ]
 }
