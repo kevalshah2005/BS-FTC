@@ -1,5 +1,6 @@
 {
   "name": "bs-ftc",
+  "homepage": "https://kevalshah2005.github.io/BS-FTC",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -39,6 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://kevalshah2005.github.io/bs-ftc"
+  }
 }
