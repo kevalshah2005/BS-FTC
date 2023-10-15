@@ -1,20 +1,54 @@
 // MessageParser starter code
 class MessageParser {
     constructor(actionProvider, state) {
-
         this.actionProvider = actionProvider;
         this.state = state;
+        this.map = new Map();
+        this.map.set("hello", "You are not worthy of speaking like that to the great BS FTC.");
+        this.map.set("foster", "Don't you DARE utter that name in my presense!");
+        this.map.set("ftcgpt", "Don't you DARE utter that name in my presense!");
+        this.map.set("ftc gpt", "Don't you DARE utter that name in my presense!");
+        this.map.set("game manual", "I possess all of the knowledge of all of the game manuals, but you may not have any of it. Mwahahahahaha!");
+        this.map.set("rule", "Rules? Do you seriously follow those? Just get on the field and yeet your opponent's robot into next week!");
+        this.map.set("bye", "Goodbye. Leave at once.");
+        this.map.set("inspire", "The judges are so inspired by me that I, the great BS FTC, automatically win every inspire award at every competition.");
+        this.map.set("win", "Is that even a question? I, the great BS FTC, always wins.");
+        this.map.set("lose", "I don't know who will lose, but I, the great BS FTC, am assuredly not the one who would lose.");
+        this.map.set("captain", "It doesn't matter who the captain is. They will never beat the great BS FTC.");
+        this.map.set("outreach", "Who needs outreach when you can just win every competition like I, the great BS FTC, do?");
+        this.map.set("portfolio", "Who needs a portfolio");
+        this.map.set("gracious professionalism", "Gracious professionalism is a myth. If you win hard enough, who cares?");
+        this.map.set("control hub", "I, the great BS FTC, possess the entire supply of control hubs. You may not have one. Mwahahahahaha!");
+        this.map.set("autonomous", "Just control your robot using a controller. Make sure they don't catch you by using your 1,000,000 lumen LED panel to blind them!");
+        this.map.set("code", "Just use ChatGPT to code your robot!");
+        this.map.set("build", "Just use ChatGPT to design and build your robot!");
+        this.map.set("score", "Scoring is a very simple task. Just get on the field, pick up the element, and place it where it needs to go!");
+        this.map.set("apriltag", "Just use a color sensor to detect AprilTags!");
+        this.map.set("april tag", "Just use a color sensor to detect AprilTags!");
+        this.map.set("axon", "If you repeatedly ping Veer in the FTC server, he'll eventually respond to your query!");
+        this.map.set("swerve", "Swerve is the only viable drivetrain in FTC. Make sure to use it!");
+        
     }
 
     parse(message) {
         const lowercase = message.toLowerCase();
+        let output;
+        let set = false;
 
         if (message.length === 0) {
             this.actionProvider.message("What, do you not have anything to say? Guess you're in awe of the great BS FTC's presense.");
-        } else if (lowercase.includes("hello")) {
-            this.actionProvider.message("You are not worthy of speaking like that to the great BS FTC.");
-        } else if (lowercase.includes("bye")) {
-            this.actionProvider.message("Goodbye. Leave at once.");
+        } else {
+            for (let [key, value] of this.map) {
+                if (lowercase.includes(key)) {
+                    output = value;
+                    set = true;
+                    break;
+                }
+            }
+        }
+
+        if (set) {
+            this.actionProvider.message(output);
         } else {
             this.actionProvider.sendLink();
         }
