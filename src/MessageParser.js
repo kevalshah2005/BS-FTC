@@ -3,11 +3,13 @@ class MessageParser {
     constructor(actionProvider, state) {
         this.actionProvider = actionProvider;
         this.state = state;
+
         this.map = new Map();
         this.map.set("hello", "You are not worthy of speaking like that to the great BS FTC.");
         this.map.set("foster", "Don't you DARE utter that name in my presense!");
         this.map.set("ftcgpt", "Don't you DARE utter that name in my presense!");
         this.map.set("ftc gpt", "Don't you DARE utter that name in my presense!");
+        this.map.set("ftc", "The Federal Trade Commission (FTC) is an independent agency of the United States government whose principal mission is the enforcement of civil (non-criminal) antitrust law and the promotion of consumer protection. The FTC shares jurisdiction over federal civil antitrust law enforcement with the Department of Justice Antitrust Division. The agency is headquartered in the Federal Trade Commission Building in Washington, DC.");
         this.map.set("manual", "I possess all of the knowledge of all of the game manuals, but you may not have any of it. Mwahahahahaha!");
         this.map.set("rule", "Rules? Do you seriously follow those? Just get on the field and yeet your opponent's robot into next week!");
         this.map.set("bye", "Goodbye. Leave at once.");
@@ -30,7 +32,12 @@ class MessageParser {
         this.map.set("android studio", "Just use Google Docs instead. It's a much better IDE. Why do you think all of the software engineering job interviews use it?");
         this.map.set("ide", "Use Google Docs. Why do you think all of the software engineering job interviews use it?");
         this.map.set("allow", "You're allowed to do whatever you want as long as you bribe the refs hard enough!");
-        this.map.set("meta", "The meta is whatever robot you build. Go wild!");
+        this.map.set("meta", "The meta is whatever robot I, the great BS FTC, build. Just watch and learn!");
+        this.map.set("discord", "Don't listen to the FTC Discord server. They don't know what they're talking about. Only I, the great BS FTC, hold all of the answers!");
+        this.map.set("drivetrain", "Swerve is the only viable drivetrain in FTC. Make sure to use it!");
+        this.map.set("robot", "Robots? Who needs those? Just do everything yourself!");
+        this.map.set("mecanum", "Mecanum is worse than swerve. Just use swerve!");
+        this.map.set("mechanum", "Imagine not being able to spell mecanum correctly.");
     }
 
     parse(message) {

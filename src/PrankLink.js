@@ -7,7 +7,7 @@ const PrankLink = () => {
     const links = [
         "https://www.youtube.com/watch?v=oHg5SJYRHA0",
         "https://www.youtube.com/watch?v=QTT5iHCHSn0",
-        "https://www.youtube.com/watch?v=fC7oUOUEEi4"
+        "https://www.youtube.com/watch?v=rsDTJpsjxgs"
     ];
     const link = links[Math.floor(Math.random() * links.length)];
     return link;

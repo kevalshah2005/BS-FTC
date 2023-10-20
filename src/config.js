@@ -12,7 +12,13 @@ const config = {
                 withAvatar: true,
                 delay: 500,
             }
-        )
+        ),
+        createChatBotMessage("What do you wish to speak with the great BS FTC about today?",
+            {
+                withAvatar: true,
+                delay: 500,
+            }
+        ),
     ],
     customStyles: {
         botMessageBox: {
