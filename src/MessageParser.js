@@ -38,15 +38,17 @@ class MessageParser {
         this.map.set("robot", "Robots? Who needs those? Just do everything yourself!");
         this.map.set("mecanum", "Mecanum is worse than swerve. Just use swerve!");
         this.map.set("mechanum", "Imagine not being able to spell mecanum correctly.");
+        this.map.set("cad", "Follow in the footsteps of the great BS FTC and freebuild your robot in its entirety!");
     }
 
     parse(message) {
         const lowercase = message.toLowerCase();
-        let output;
+        let output = "";
         let set = false;
 
         if (message.length === 0) {
-            this.actionProvider.message("What, do you not have anything to say? Guess you're in awe of the great BS FTC's presense.");
+            output = "What, do you not have anything to say? Guess you're in awe of the great BS FTC's presense.";
+            set = true;
         } else {
             for (let [key, value] of this.map) {
                 if (lowercase.includes(key)) {
